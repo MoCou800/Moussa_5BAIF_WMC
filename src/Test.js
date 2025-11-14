@@ -55,35 +55,38 @@ const newName = ["Hallo", ...name, " !"]
 console.log(newName)
 
 
-const person = { firstName: "Morhaf", lastName: "Moussa", nummer: 431234567 };
-const { firstName, lastName: familyname, ...rest } = person;
+const person = [{ firstName: "Morhaf", lastName: "Moussa", nummer: 431234567 }];
+const { _firstName, lastName: familyname, ...rest } = person;
 console.log(familyname);
 console.log(rest);
 
+const numbers1 = [11, 22, 33, 44, 55];
+const [_first, _second, ..._rest1] = numbers1;
+
+
 const numbers = [10, 20, 30, 40];
-const [first, second, third] = numbers;
-console.log(first);
-console.log(second);
+const [first1, second2, third] = numbers;
+console.log(first1);
+console.log(second2);
 console.log(third);
 
 
-const person2 = { name: 'Morhaf', age: 21, city: 'Traismauer' };
+const _person2 = { name: 'Morhaf', age: 21, city: 'Wien' };
 const { name1, city } = person;
 
 console.log(name1);
 console.log(city);
 
-const numbers1 = [11, 22, 33, 44, 55];
-const [first, second, ...rest] = numbers1;
 
 
 
 
 
-const { name, ...others } = person;
+const person45 = { firstName: "Morhaf", lastName: "Moussa", nummer: 431234567 };
+const { name45, ...others } = person45;
 
-console.log(name);   // Bob
-console.log(others); // { age: 30, city: 'Paris' }
+console.log(name45);
+console.log(others);
 
 
 // D
