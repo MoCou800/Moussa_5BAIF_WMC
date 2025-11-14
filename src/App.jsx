@@ -20,7 +20,7 @@ function App() {
     return (
         <div>
             <h1>Item Liste!</h1>
-            <ListComponent products={products} />
+            <ListComponent products={products} isLegal={true} />
             <ButtonComponent onClick={hClick} />
         </div>
     );
